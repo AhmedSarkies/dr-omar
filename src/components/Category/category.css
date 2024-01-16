@@ -1,0 +1,32 @@
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  border-radius: 15px;
+  border: 1.5px solid #f5ecd9;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .category {
+    column-gap: 10px;
+  }
+  .category-item {
+    height: 75px;
+  }
+  .category-item img {
+    width: 25px;
+    height: 25px;
+  }
+  .category-item h6 {
+    font-size: 0.75rem;
+  }
+}

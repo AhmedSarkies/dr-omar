@@ -1,0 +1,72 @@
+.download-app {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.download-btns-container {
+  width: 100%;
+  height: 100px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 20px;
+  background: #d19b6f;
+}
+.download-app .left-side {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+}
+.download-app .left-side h2 {
+  font-size: 50px;
+}
+.download-app .left-side p {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #00000075;
+}
+.download-app .right-side img {
+  margin-top: -150px;
+  width: 450px;
+}
+@media only screen and (max-width: 1200px) {
+  .download-app {
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+  .download-app .left-side {
+    margin-left: 0;
+    width: 100%;
+  }
+  .download-app .left-side h2 {
+    font-size: 25px;
+  }
+  .download-app .left-side p {
+    font-size: 14px;
+    margin: 10px 0 50px 0;
+  }
+  .download-app .right-side img {
+    margin-top: -50px;
+    width: 175px;
+  }
+  .download-btns-container {
+    flex-direction: column-reverse;
+    height: 200px;
+    gap: 0;
+  }
+  .download-btns-container img {
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .download-btns {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,41 @@
+.books {
+  position: relative;
+  overflow: hidden;
+}
+.left-side a {
+  color: #d19b6f;
+  text-decoration: none;
+}
+.right-side {
+  font-weight: 700;
+  color: #051427;
+}
+.books-item {
+  cursor: pointer;
+}
+.books-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+.prev,
+.next {
+  width: 25px;
+  height: 25px;
+  background: #d19b6f;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(75%);
+}
+.prev {
+  left: 0px;
+}
+.next {
+  right: 0px;
+}

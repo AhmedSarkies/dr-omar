@@ -1,0 +1,106 @@
+.hero {
+  background: linear-gradient(to left, #d19b6f, #f6e5c3);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  margin-top: -25vh;
+  position: relative;
+  padding-top: 20px;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/images/layout-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: -16px;
+  width: 110px;
+  height: 110px;
+  background: url("../../assets/images/quran.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.hero .hero-img {
+  position: relative;
+  z-index: 5;
+}
+.hero-text h1 {
+  padding-right: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.hero-text .name {
+  background: -webkit-linear-gradient(#384659, #051427);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+.hero-text .next-prayer {
+  color: #7a808a;
+}
+@media screen and (max-width: 1200px) {
+  .hero {
+    margin-top: -16vh;
+  }
+  .hero-text h1 {
+    font-size: 1.25rem;
+  }
+  .hero-text .name {
+    font-size: 2rem;
+  }
+  .hero-img img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hero {
+    margin-top: -10vh;
+  }
+  .hero-text h1 {
+    font-size: 1rem;
+  }
+  .hero-text .name {
+    font-size: 1.5rem;
+  }
+  .hero-img img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    margin-top: -6vh;
+  }
+  .hero-img img {
+    width: 150px;
+  }
+  .hero::after {
+    display: none;
+  }
+  .hero-text h1 {
+    padding-right: 0 !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero-text .name {
+    font-size: 1.25rem;
+  }
+  .hero-img img {
+    width: 100px;
+  }
+}
